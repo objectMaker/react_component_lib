@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import Btn from './components/Btn/Btn'
 import useMouseMove from './Hooks/mouseMove';
 
 function App() {
@@ -11,7 +10,6 @@ function App() {
     <div className="App">
       <div>x{x} </div>
       <div>y{y}</div>
-        <Btn />
     </div>
   );
 }
