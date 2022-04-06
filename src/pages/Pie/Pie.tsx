@@ -1,10 +1,10 @@
 import React from "react";
 
-const Home = ()=>{
+const Pie = ()=>{
     return (
         <>
-        <div>home</div>
+        <div>我是pie</div>
         </>
     )
     }
-export default Home
+export default Pie
