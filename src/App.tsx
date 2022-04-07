@@ -5,6 +5,7 @@ import Pie from "./pages/Pie/Pie"
 import './App.css';
 
 import useMouseMove from './Hooks/mouseMove';
+import Button,{btnType} from './components/Button/Button';
 
 function App() {
   const {x,y}= useMouseMove()
@@ -18,6 +19,12 @@ function App() {
         <Link to="/home">Home</Link>
       </nav>
       <h1>Welcome to React Router!</h1>
+      <Button btnType={btnType.Warning}>
+        我是btn
+      </Button>
+      <Button btnType={btnType.Warning} disabled={true}>
+        我是btn
+      </Button>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="pie" element={<Pie />} />
