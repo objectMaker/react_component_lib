@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React from 'react';
 import Parent from '../Parent'
 interface theme {
     [K :string] : {
@@ -22,9 +22,7 @@ const GrandPa:React.FC = ()=>{
         <>
         我是GrandPa
         <div>
-        <themeContext.Provider value={theme.dark}>
             <Parent/>
-        </themeContext.Provider>
         </div>
         </>
     )
