@@ -20,6 +20,7 @@ const Button:React.FC<iBtnProps> = (props)=>{
     console.log(props,'props');
     if(props.type ){
         //如果有多传入btn的类型。就要加上相应的类型。
+        console.log('...');
     }
     return (
         <>
