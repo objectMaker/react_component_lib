@@ -1,0 +1,5 @@
+@mixin componentBg($componentName,$name) {
+    .#{$componentName}-#{$name}{
+        background-color:var(--#{$name})
+    }
+}
