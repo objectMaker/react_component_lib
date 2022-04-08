@@ -5,7 +5,7 @@ const App:React.FC =()=>{
   return (
     <>
       <div>我是app</div>
-      <Button>btn</Button>
+      <Button type="danger">btn</Button>
     </>
   )
 } 

@@ -1,3 +1,16 @@
 .btn{
     background-color:var(--primary);
 }
+// type btnType =  'primary'| 'danger'|'success'| 'warning'| 'info';
+// type btnSize =  'normal'| 'mini'|'lg'| 'sm';
+
+@mixin componentBg($componentName,$name) {
+    .#{$componentName}-#{$name}{
+        background-color:var(--#{$name})
+    }
+}
+@include componentBg(btn,danger);
+@include componentBg(btn,primary);
+@include componentBg(btn,success);
+@include componentBg(btn,warning);
+@include componentBg(btn,info);
