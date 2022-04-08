@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>x{x} </div>
+      <div className="outerX">x{x} </div>
       <div>y{y}</div>
       <nav>
         <Link to="/pie">Pie</Link>
