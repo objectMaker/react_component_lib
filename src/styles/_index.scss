@@ -1,7 +1,14 @@
+@import './variable';
 :root{
-    --primary:#409EFF;
-    --warning:#E6A23C;
-    --success:#67C23A;
-    --info:#909399;
-    --danger:#F56C6C;
+    --primary:#{$primary};
+    --warning:#{$warning};
+    --success:#{$success};
+    --info:#{$info};
+    --danger:#{$danger};
+    //通过循环设置多种变量颜色
+    // $i:1;
+    // @each $singleStatus in $status{
+    //     --#{nth($status,$i)}:#{nth($statusColor,$i)};
+    //     $i:$i+1;
+    // }
 }
