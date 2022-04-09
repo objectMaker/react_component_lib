@@ -1,24 +1,22 @@
 @import './variable';
 :root{
-    --primary:#{$primary};
-    --warning:#{$warning};
-    --success:#{$success};
-    --info:#{$info};
-    --danger:#{$danger};
-    --primary-lighten:#{lighten($primary,15%)};
-    --warning-lighten:#{lighten($warning,15%)};
-    --success-lighten:#{lighten($success,15%)};
-    --info-lighten:#{lighten($info,15%)};
-    --danger-lighten:#{lighten($danger,15%)};
+    // --primary:#{$primary};
     // --warning:#{$warning};
     // --success:#{$success};
     // --info:#{$info};
     // --danger:#{$danger};
+    // --primary-lighten:#{lighten($primary,15%)};
+    // --warning-lighten:#{lighten($warning,15%)};
+    // --success-lighten:#{lighten($success,15%)};
+    // --info-lighten:#{lighten($info,15%)};
+    // --danger-lighten:#{lighten($danger,15%)};
 
     //通过循环设置多种变量颜色
-    // $i:1;
-    // @each $singleStatus in $status{
-    //     --#{nth($status,$i)}:#{nth($statusColor,$i)};
-    //     $i:$i+1;
-    // }
+    $i:1;
+    @each $singleStatus in $status{
+        --#{nth($status,$i)}-lighten:#{lighten(nth($statusColor,$i),$lightenPercent)};
+        --#{nth($status,$i)}-darken:#{darken(nth($statusColor,$i),$darkenPercent)};
+        --#{nth($status,$i)}:#{nth($statusColor,$i)};
+        $i:$i+1;
+    }
 }
