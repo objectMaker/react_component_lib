@@ -13,7 +13,7 @@
 @mixin componentSize($componentName,$size) { 
     .#{$componentName}-#{$size}{
         @if $componentName == btn {
-        padding:var(--btn-#{$size});
+          padding:var(--btn-#{$size});
         }
     }
 }

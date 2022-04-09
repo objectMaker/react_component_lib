@@ -1,21 +1,22 @@
+$primary:#409EFF;
+$warning:#E6A23C;
+$success:#67C23A;
+$info:#909399;
+$danger:#F56C6C;
 $status:primary,warning,success,info,danger;
-$statusColor:#409EFF,#E6A23C,#67C23A,#909399,#F56C6C;
+$statusColor:$primary,$warning,$success,$info,$danger;
     
-    $primary:#409EFF;
-    $warning:#E6A23C;
-    $success:#67C23A;
-    $info:#909399;
-    $danger:#F56C6C;
+
 
 
     $lightenPercent:10%;
     $darkenPercent:20%;
 
     $size:normal,mini,large,small; //定义了多种变量大小
-    $btn-normal:0.5rem 1rem;
-    $btn-mini:0.2rem 0.4rem;
-    $btn-large:0.6rem 1.4rem;
-    $btn-small:0.3rem 0.6rem;
+    $btn-normal:0.4rem 0.8rem;
+    $btn-mini:0.14rem 0.3rem;
+    $btn-large:0.5rem 1.4rem;
+    $btn-small:0.23rem 0.5rem;
     $sizeList:$btn-normal,$btn-mini,$btn-large,$btn-small;
 
 
