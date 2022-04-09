@@ -1,11 +1,22 @@
 @mixin componentBg($componentName,$name) { 
     .#{$componentName}-#{$name}{
         background-color:var(--#{$name});
+        border:1px solid var(--#{$name});
         @if $componentName == btn {
             &:hover{
                 background-color:var(--#{$name}-lighten);
+                border:1px solid var(--#{$name}-lighten);
             }
         }
     }
-
+}
+@mixin componentSize($componentName,$size) { 
+    .#{$componentName}-#{$size}{
+        background-color:var(--#{$name});
+        @if $componentName == btn {
+            // &:hover{
+            //     background-color:var(--#{$name}-lighten);
+            // }
+        }
+    }
 }

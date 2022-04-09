@@ -11,7 +11,8 @@
     // --info-lighten:#{lighten($info,15%)};
     // --danger-lighten:#{lighten($danger,15%)};
 
-    //通过循环设置多种变量颜色
+    //通过循环设置多种变量颜色,生成的所有变量都是css变量日后，组件使用的也是响应的css变量
+    //日后我们甚至可以在后台让别人设置颜色主题，高度定制化
     $i:1;
     @each $singleStatus in $status{
         --#{nth($status,$i)}-lighten:#{lighten(nth($statusColor,$i),$lightenPercent)};
