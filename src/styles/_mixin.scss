@@ -1,16 +1,16 @@
-@mixin componentBg($componentName,$name) { 
-    .#{$componentName}-#{$name}{
-        background-color:var(--#{$name});
-        border:1px solid var(--#{$name});
-        @if $componentName == btn {
-            &:hover{
-                background-color:var(--#{$name}-lighten);
-                border:1px solid var(--#{$name}-lighten);
+@mixin componentBg($componentName,$name) { //组件设置背景和边框的mixin
+    @if $componentName == btn {
+        .#{$componentName}-#{$name}{
+            background-color:var(--#{$name});
+            border:1px solid var(--#{$name});
+                &:hover{
+                    background-color:var(--#{$name}-lighten);
+                    border:1px solid var(--#{$name}-lighten);
+                }
             }
-        }
     }
 }
-@mixin componentSize($componentName,$size) { 
+@mixin componentSize($componentName,$size) { //组件大小设置mixin
     .#{$componentName}-#{$size}{
         @if $componentName == btn {
           padding:var(--btn-#{$size});
