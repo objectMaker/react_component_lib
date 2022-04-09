@@ -21,12 +21,10 @@ interface iBtnProps {
 
 const Button:React.FC<iBtnProps> = (props)=>{
     const {type,size,link,href} = props;
-    const classname = classnames('btn',{
+    const btnClassName = classnames('btn',{
         [`btn-${size}`]:size,
         [`btn-${type}`]:type,
     })
-    console.log(classname,'classname');
-    
     if(link){
         return (<>
             <a href={href?href:''}>{props.children}</a>
@@ -38,7 +36,7 @@ const Button:React.FC<iBtnProps> = (props)=>{
         }
         return (
             <>
-                <button className={classname}>
+                <button className={btnClassName}>
                     {props.children}
                 </button>
             </>
