@@ -5,6 +5,16 @@
     --success:#{$success};
     --info:#{$info};
     --danger:#{$danger};
+    --primary-lighten:#{lighten($primary,15%)};
+    --warning-lighten:#{lighten($warning,15%)};
+    --success-lighten:#{lighten($success,15%)};
+    --info-lighten:#{lighten($info,15%)};
+    --danger-lighten:#{lighten($danger,15%)};
+    // --warning:#{$warning};
+    // --success:#{$success};
+    // --info:#{$info};
+    // --danger:#{$danger};
+
     //通过循环设置多种变量颜色
     // $i:1;
     // @each $singleStatus in $status{

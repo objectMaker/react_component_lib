@@ -1,5 +1,11 @@
-@mixin componentBg($componentName,$name) {
+@mixin componentBg($componentName,$name) { 
     .#{$componentName}-#{$name}{
-        background-color:var(--#{$name})
+        background-color:var(--#{$name});
+        @if $componentName == btn {
+            &:hover{
+                background-color:var(--#{$name}-lighten);
+            }
+        }
     }
+
 }
