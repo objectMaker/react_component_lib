@@ -23,6 +23,7 @@ const Button:React.FC<iBtnProps> = (props)=>{
     const {type,size,link,href} = props;
     const btnClassName = classnames('btn',{
         [`btn-${size}`]:size,
+        [`font-${size}`]:size,
         [`btn-${type}`]:type,
     })
     if(link){
