@@ -1,23 +1,30 @@
+$status:primary,warning,success,info,danger;//全局可能用到的多种状态
+$size:normal,mini,large,small; //组件可以定义大小变量
+
+$lightenPercent:10%;//btn鼠标移入变亮百分比
+$darkenPercent:20%;//btn禁用百分比
+
+//通用全局颜色
 $primary:#409EFF;
 $warning:#E6A23C;
 $success:#67C23A;
 $info:#909399;
 $danger:#F56C6C;
-$status:primary,warning,success,info,danger;
-$statusColor:$primary,$warning,$success,$info,$danger;
+$statusColor:$primary,$warning,$success,$info,$danger; 
+
+//按钮大小按钮特有padding值
+$btn-normal:0.4rem 0.8rem;
+$btn-mini:0.14rem 0.3rem;
+$btn-large:0.5rem 1.4rem;
+$btn-small:0.23rem 0.5rem;
+$sizeList:$btn-normal,$btn-mini,$btn-large,$btn-small;
     
 
 
 
-    $lightenPercent:10%;
-    $darkenPercent:20%;
 
-    $size:normal,mini,large,small; //定义了多种变量大小
-    $btn-normal:0.4rem 0.8rem;
-    $btn-mini:0.14rem 0.3rem;
-    $btn-large:0.5rem 1.4rem;
-    $btn-small:0.23rem 0.5rem;
-    $sizeList:$btn-normal,$btn-mini,$btn-large,$btn-small;
+
+
 
 
 
