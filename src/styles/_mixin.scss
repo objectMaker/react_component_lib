@@ -10,10 +10,11 @@
             }
     }
 }
-@mixin componentSize($componentName,$size) { //组件大小设置mixin
+@mixin componentSize($componentName,$size) { //组件大小设置mixin,组件大小也会设置字体大小，所以要在相应位置添加字体大小
     .#{$componentName}-#{$size}{
         @if $componentName == btn {
           padding:var(--btn-#{$size});
+          font-size:var(--font-#{$size});
         }
     }
 }

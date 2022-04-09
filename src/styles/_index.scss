@@ -26,4 +26,10 @@
         --btn-#{$singleSize}:#{nth($sizeList,$j)};
         $j:$j+1;
     }
+    //生成字体带下css变量
+    $j : 1;
+    @each $singleSize in $size{
+        --font-#{$singleSize}:#{nth($fontSizeList,$j)};
+        $j:$j+1;
+    }
 }
