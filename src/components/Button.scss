@@ -3,11 +3,6 @@
 .btn{
     background-color:var(--primary);
 }
-// @include componentBg(btn,danger);
-// @include componentBg(btn,primary);
-// @include componentBg(btn,success);
-// @include componentBg(btn,warning);
-// @include componentBg(btn,info);
 @each $singleStatus in $status{ //动态生成各种状态
     @include componentBg(btn,$singleStatus)
 }
