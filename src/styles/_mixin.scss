@@ -12,11 +12,8 @@
 }
 @mixin componentSize($componentName,$size) { 
     .#{$componentName}-#{$size}{
-        background-color:var(--#{$name});
         @if $componentName == btn {
-            // &:hover{
-            //     background-color:var(--#{$name}-lighten);
-            // }
+        padding:var(--btn-#{$size});
         }
     }
 }

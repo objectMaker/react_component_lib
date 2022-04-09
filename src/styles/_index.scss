@@ -20,4 +20,10 @@
         --#{nth($status,$i)}:#{nth($statusColor,$i)};
         $i:$i+1;
     }
+    //生成按钮大小css变量
+    $j : 1;
+    @each $singleSize in $size{
+        --btn-#{$singleSize}:#{nth($sizeList,$j)};
+        $j:$j+1;
+    }
 }

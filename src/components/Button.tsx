@@ -3,7 +3,7 @@ import './Button.scss';
 import classnames from 'classnames';
 //定义传入type类型
 type btnType =  'primary'| 'danger'|'success'| 'warning'| 'info';
-type btnSize =  'normal'| 'mini'|'lg'| 'sm';
+type btnSize =  'normal'| 'mini'|'large'| 'small';
 
 //定义传入数据接口类型
 interface iBtnProps {

@@ -6,3 +6,6 @@
 @each $singleStatus in $status{ //动态生成各种状态
     @include componentBg(btn,$singleStatus)
 }
+@each $singleSize in $size{ //动态生成各种状态
+    @include componentSize(btn,$singleSize)
+}
