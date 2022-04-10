@@ -8,7 +8,7 @@ const App:React.FC =()=>{
   return (
     <>
       <div>我是app</div>
-      <Button size="mini" disabled={true} onClick={handleClick}>我是你的btn呀</Button>
+      <Button size="large" disabled={false} onClick={handleClick}>我是你的btn呀</Button>
     </>
   )
 } 

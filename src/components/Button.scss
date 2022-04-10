@@ -7,6 +7,9 @@
     vertical-align: middle;
     border-radius:.2rem;
     white-space: nowrap;//不换行
+    &:hover{
+        cursor:pointer;
+    }
 }
 @each $singleStatus in $status{ //动态生成各种状态
     @include componentBg(btn,$singleStatus)
