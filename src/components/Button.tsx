@@ -18,17 +18,19 @@ interface iBtnProps {
     },
     href?:string,
 }
-
-const Button:React.FC<iBtnProps> = (props)=>{
-    const {type,size,link,href} = props;
-    const btnClassName = classnames('btn',{
+type acceptAttrs =   iBtnProps & Omit<React.ButtonHTMLAttributes<HTMLButtonElement>,'type'|'size'> & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>,'type'|'size'>
+type res = Partial<acceptAttrs>;
+//还有那些事件
+const Button:React.FC<res> = (props)=>{
+    const {type,size,link,href,className,...rest} = props;
+    const btnClassName = classnames('btn',className,{
         [`btn-${size}`]:size,
         [`font-${size}`]:size,
         [`btn-${type}`]:type,
     })
     if(link){
         return (<>
-            <a href={href?href:''}>{props.children}</a>
+            <a href={href?href:''} {...rest}>{props.children}</a>
         </>)
     }else{
         if(props.type ){
@@ -37,7 +39,7 @@ const Button:React.FC<iBtnProps> = (props)=>{
         }
         return (
             <>
-                <button className={btnClassName}>
+                <button className={btnClassName} {...rest}>
                     {props.children}
                 </button>
             </>
