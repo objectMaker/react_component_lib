@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './components/Button';
 import Menu from './components/Menu/Menu';
 import MenuItem from './components/MenuItem/MenuItem';
-
+import Count from './components/Count/Count';
 const App:React.FC =()=>{
   const handleClick = ()=>{
     console.log('click出发了');
@@ -28,7 +28,7 @@ const App:React.FC =()=>{
           我是Item3
         </MenuItem>
       </Menu>
-
+      <Count/>
     </>
   )
 } 
