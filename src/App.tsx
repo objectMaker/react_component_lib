@@ -40,6 +40,8 @@ const App:React.FC =()=>{
       <Link to="about">about</Link>
       <Link to="user">user</Link>
       <Link to="">home</Link>
+      <div></div>
+      <hr />
       <Routes> 
         <Route path="/about" element={<About/>}>
         </Route>
